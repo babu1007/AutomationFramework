@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NavigatorSuite]" parallel="none">
+  <parameter name="WorkspacePath" value="/SeleniumAutomationTesting/"/>
+  <parameter name="UseNewBrowserForEachTest" value="true"/>
+  <parameter name="OperatingSystemName" value="WINDOWS"/>
+  <parameter name="runningPlatform" value="local"/>
+  <parameter name="TestDatapropertyFileName" value="Navigator_TestData.properties"/>
+  <parameter name="AntParameter" value="debug"/>
+  <parameter name="browser" value="CHROME"/>
+  <parameter name="browserVersion" value=""/>
+  <parameter name="pickBrowserBasedOnDay" value="false"/>
+  <parameter name="OperatingSystemVersion" value="7"/>
+  <test name="NavigatorTest-Smoke(failed)" parallel="none">
+    <classes>
+      <class name="com.DemandPortal.testcases.Startup_debug">
+        <methods>
+          <include name="openPortal"/>
+          <include name="quitWebDriver"/>
+          <include name="afterEachMethod"/>
+          <include name="initWebDriver"/>
+        </methods>
+      </class> <!-- com.DemandPortal.testcases.Startup_debug -->
+      <class name="com.DemandPortal.testcases.LoginTestCase">
+        <methods>
+          <include name="afterEachMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.DemandPortal.testcases.LoginTestCase -->
+    </classes>
+  </test> <!-- NavigatorTest-Smoke(failed) -->
+</suite> <!-- Failed suite [NavigatorSuite] -->

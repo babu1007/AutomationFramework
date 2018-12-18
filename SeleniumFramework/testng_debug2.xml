@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NavigatorSuite" parallel="none">
+<parameter name="browser" value="FIREFOX" />                    <!-- eg: "FIREFOX", "CHROME", "IE"  -->
+<parameter name="browserVersion" value="11" />
+<parameter name="OperatingSystemName" value="WINDOWS" />	<!-- eg: "WINDOWS", "LINUX", "UNIX"  -->
+<parameter name="OperatingSystemVersion" value="7" />
+<parameter name="runningPlatform" value="local" />     <!-- eg: "local", "SauceLabs","SAUCELABS_JENKINS"  -->
+<parameter name="TestDatapropertyFileName" value="Navigator_TestData.properties" />
+<parameter name="WorkspacePath" value="/Selenium-Automation/" />
+<parameter name="AntParameter" value="debug" />
+<parameter name="pickBrowserBasedOnDay" value="false" />
+<parameter name="UseNewBrowserForEachTest" value="true" />
+<test name="NavigatorTest-Smoke" preserve-order="true" enabled="true">
+
+<classes>
+<class name="com.whs.navigator.testcases.Startup_debug"/>
+<class name="com.whs.navigator.testcases.CatalogTestCase"/>
+
+
+<methods>
+<include name="navValCatalogLinkPageObjects" />
+
+
+</methods>
+
+
+</classes>
+</test>
+</suite>

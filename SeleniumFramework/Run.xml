@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NavigatorSuite" parallel="none">
+<parameter name="browser" value="CHROME" />                    <!-- eg: "FIREFOX", "CHROME", "IE"  -->
+<parameter name="browserVersion" value="20" />
+<parameter name="OperatingSystemName" value="WINDOWS" />	<!-- eg: "WINDOWS", "LINUX", "UNIX"  -->
+<parameter name="OperatingSystemVersion" value="7" />
+<parameter name="runningPlatform" value="local" />     <!-- eg: "local", "SauceLabs","SAUCELABS_JENKINS"  -->
+<parameter name="TestDatapropertyFileName" value="Navigator_TestData.properties" />
+<parameter name="WorkspacePath" value="/SeleniumAutomationTesting/" />
+<parameter name="AntParameter" value="debug" />
+<parameter name="pickBrowserBasedOnDay" value="false" />
+<parameter name="UseNewBrowserForEachTest" value="true" />
+<test name="NavigatorTest-Smoke" preserve-order="true" enabled="true">
+
+<classes>
+<class name="com.DemandPortal.testcases.Startup_debug"/>
+<class name="com.DemandPortal.testcases.LoginTestCase">
+
+
+<methods>
+<!--<include name="homePagePortletsLinks" />
+<include name="verifyCreateDemandPage" />
+<include name="enterDemandDetailsAndSubmit" />-->
+
+
+</methods>
+
+</class>
+</classes>
+</test>
+</suite>

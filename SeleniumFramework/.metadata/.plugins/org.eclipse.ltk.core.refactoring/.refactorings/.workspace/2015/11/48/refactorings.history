@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;WHS_Navigator-EXTJS5_SplitWork&apos;" deleteContents="false" description="Delete resource &apos;WHS_Navigator-EXTJS5_SplitWork&apos;" element1="/WHS_Navigator-EXTJS5_SplitWork" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1448372583572"/>
+</session>

@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+D:\Navigator-MasterWorkSpace\WHS_Navigator-Prod\src\com\.metadata\.plugins\org.eclipse.jdt.core
